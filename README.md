@@ -32,7 +32,7 @@ Create the app
 
 Start the build
 
-    oc start-build coolstore --from-file=deployments/ROOT.war
+    oc start-build coolstore --from-file=target/ROOT.war
     
 
  
