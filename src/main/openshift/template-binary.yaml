@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: template.openshift.io/v1
 kind: Template
 labels:
   template: coolstore-monolith-binary-demo
@@ -82,7 +82,7 @@ objects:
       sourceStrategy:
         from:
           kind: ImageStreamTag
-          name: jboss-eap70-openshift:1.6
+          name: jboss-eap71-openshift:latest
           namespace: ${IMAGE_STREAM_NAMESPACE}
       type: Source
 - apiVersion: v1
